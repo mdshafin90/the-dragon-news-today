@@ -15,7 +15,7 @@ const Main = () => {
                         <LeftNav />
                     </Col>
                     <Col lg={6}>
-                        Main Content Coming Soon.....
+                        <h3 className='text-center'>Main Content Coming Soon....</h3>
                     </Col>
                     <Col lg={3}>
                         <RightNav />
