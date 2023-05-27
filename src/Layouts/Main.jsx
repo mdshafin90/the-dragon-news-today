@@ -4,18 +4,21 @@ import Footer from '../Pages/Shared/Footer/Footer';
 import { Col, Container, Row } from 'react-bootstrap';
 import LeftNav from '../Pages/Shared/LeftNav/LeftNav';
 import RightNav from '../Pages/Shared/RightNav/RightNav';
+import { Outlet } from 'react-router-dom';
+import NavigationBar from '../Pages/Shared/NavigationBar/NavigationBar';
 
 const Main = () => {
     return (
         <div>
             <Header />
+            <NavigationBar />
             <Container>
                 <Row>
                     <Col lg={3}>
                         <LeftNav />
                     </Col>
                     <Col lg={6}>
-                        <h3 className='text-center'>Main Content Coming Soon....</h3>
+                        <Outlet />
                     </Col>
                     <Col lg={3}>
                         <RightNav />
