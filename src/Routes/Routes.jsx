@@ -44,7 +44,7 @@ const router = createBrowserRouter([
             {
                 path: "/category/:id",
                 element: <Category />,
-                loader: ({ params }) => fetch(`http://localhost:4000/category/${params.id}`)
+                loader: ({ params }) => fetch(`https://dragon-news-server-mdshafin90.vercel.app/category/${params.id}`)
             }
         ]
     },
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
             {
                 path: ":id",
                 element: <PrivateRoute><News /></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:4000/news/${params.id}`)
+                loader: ({ params }) => fetch(`https://dragon-news-server-mdshafin90.vercel.app/news/${params.id}`)
             }
         ]
     }
