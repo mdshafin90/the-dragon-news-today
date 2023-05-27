@@ -35,7 +35,7 @@ const Login = () => {
     return (
         <div>
             <h1 className='text-center'>Please Login !!!</h1>
-            <Form onSubmit={handleLogIn} className='w-25 mx-auto border p-5 my-4 rounded'>
+            <Form onSubmit={handleLogIn} className='w-50 mx-auto border p-5 my-4 rounded'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email Address</Form.Label>
                     <Form.Control name='email' type="email" placeholder="Enter Email" />
